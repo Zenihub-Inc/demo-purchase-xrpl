@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zenihub demo XRPL Integration</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <div>
+          <h1 class="mt-5">Demo payment token with XRPL</h1>
+        </div>
+        <div>
+          <div class="card mt-5">
+            <div class="card-body">
+              <div>
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputSecret" class="form-label"
+                      >Secret</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputSecret"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputAmount" class="form-label"
+                      >Amount</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputAmount"
+                      aria-describedby="amountInput"
+                    />
+                  </div>
+                  <button
+                    onClick="handleSubmit()"
+                    type="button"
+                    class="btn btn-primary"
+                  >
+                    Pay Now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/xrpl@2.5.0-beta.1/build/xrpl-latest-min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
